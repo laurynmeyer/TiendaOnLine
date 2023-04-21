@@ -8,7 +8,7 @@ const NavBar = () => {
                 <h3>Mi Tienda On Line</h3>
                 <ul>
                     <li>
-                        <a href="">Contacto</a>
+                        <a href="">Nuestros Productos</a>
                         <a href="">Nuestras promociones</a>
                         <a href="">Nosotros</a>
                         <a href="">Contacto</a>
