@@ -30,9 +30,12 @@ export const ItemListContainer = ({ greeting }) => {
     }, [id])
 
     return (
-        <Container className="mt-4">
-            <h1>{greeting}</h1>
-            <ItemList list={list} />
+        <Container className="list_container">
+            <div className="cards_container">
+                <h1>{greeting}</h1>
+                <ItemList list={list} />
+            </div>
         </Container>
-    )
+    );
+
 }

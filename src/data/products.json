@@ -3,7 +3,7 @@
 		"name": "MacBook Air M2 startlight",
 		"description": "Procesador Intel Core i5. Memoria RAM de 16GB. Resolución 1920x1080 px. Antireflejo. Placa de video NVIDIA GeForce MX350. Conexiónwifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Posee pad numérico. Modo sonido stereo. La duración de la batería depende del uso que se le de al producto",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_817689-MLA51356381077_082022-O.webp",
-		"stock": 35,
+		"stock": 14,
 		"category": "Apple",
 		"id": "1",
 		"prize": 835000
@@ -21,7 +21,7 @@
 		"name": "Lenovo Thinkpad L14 Gen 2",
 		"description": "Procesador Intel® Core™ i7-1165G7 de 11ᵃ Generación (2.80 GHz hasta 4.70 GHz). 16 GB DDR4-3200MHz (Soldado). 512 GB SSD M.2 2242 PCIe Gen3 TLC.Gráficos Intel® Iris® Xe integrados. Xbox Game Pass Ultimate (3 meses)",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_969158-MLA54913723026_042023-O.webp",
-		"stock": 83,
+		"stock": 16,
 		"category": "Lenovo",
 		"id": "3",
 		"prize": 476000
@@ -30,7 +30,7 @@
 		"name": "MacBook Pro 2020",
 		"description": "Procesador Apple M1. Memoria RAM de 16GB. Pantalla LED de 13.3. Resolución de 2560x1600 px con retina display. Placa de video Apple M1 8-Core GPU. Conexión wifi y bluetooth. Con 2 puertos USB. Modo de sonido Stereo. Dolby Atmos. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_907433-MLA45795227804_052021-O.webp",
-		"stock": 27,
+		"stock": 17,
 		"category": "Apple",
 		"id": "4",
 		"prize": 799000
@@ -39,7 +39,7 @@
 		"name": "Notebook Dell Vostro 3401",
 		"description": "Procesador Intel Core i3. Memoria RAM de 8GB. Resolución de 1366x768 px. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_752926-MLA53680947785_022023-O.webp",
-		"stock": 89,
+		"stock": 12,
 		"category": "Dell",
 		"id": "5",
 		"prize": 346000
@@ -48,7 +48,7 @@
 		"name": "Notebook HP ProBook 250 G7",
 		"description": "Procesador Intel Core i5. Memoria RAM de 4GB. Pantalla LED de 15.6. Resolución de 1366x768 px. Es antirreflejo. Placa de video Intel UHD Graphics G1 (Ice Lake 32 EU). Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido Stereo. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_927455-MLA52223584440_102022-O.webp",
-		"stock": 73,
+		"stock": 13,
 		"category": "HP",
 		"id": "6",
 		"prize": 300000
@@ -57,7 +57,7 @@
 		"name": "Lenovo IdeaPad 14ADA7",
 		"description": "Procesador AMD Ryzen 5. Memoria RAM de 8GB. Resolución de 1366x768 px. Es antirreflejo. Placa de video AMD Radeon RX Vega 8 (Ryzen 2000/3000). Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Modo de sonido HD Audio, Stereo, Dolby Audio. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_686823-MLA53040634542_122022-O.webp",
-		"stock": 62,
+		"stock": 12,
 		"category": "Lenovo",
 		"id": "7",
 		"prize": 259000
@@ -75,7 +75,7 @@
 		"name": "Dell Vostro 5410",
 		"description": "Número de parte: t5whj. Procesador: intel core i5-11320h. Sistema operativo: windows 11 pro. Tarjeta de video: gráficos intel iris xe integrados. Pantalla: 14. Memoria: 8 gb ddr4 (3200 mhz). Color: gris titanio. Teclado: sin retroiluminación. Ranura de memoria: 2x so-dimm. Dimensiones: 321 x 213 x 18 mm.. Peso: a partir de 1.44 kg. Cámara: cámara hd rgb. Audio y parlantes: audio de alta definición. Batería: batería 4 celdas integradas",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_856591-MLA54723360564_032023-O.webp",
-		"stock": 60,
+		"stock": 16,
 		"category": "Dell",
 		"id": "9",
 		"prize": 413000
@@ -84,7 +84,7 @@
 		"name": "Notebook HP 15-ef2514la",
 		"description": "Procesador AMD Ryzen 7. Memoria RAM de 8GB. Resolución de 1366x768 px. Placa de video AMD Radeon RX Vega 8 (Ryzen 4000/5000). Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido Stereo. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_982323-MLA51606812711_092022-O.webp",
-		"stock": 57,
+		"stock": 17,
 		"category": "HP",
 		"id": "10",
 		"prize": 400000
@@ -111,7 +111,7 @@
 		"name": "Lenovo Ip 3 15itl6",
 		"description": "Procesador Intel Core i5. Memoria RAM de 8GB. Pantalla LCD de 15.6. Resolución de 1920x1080 px. Es antirreflejo. Placa de video Intel Iris Xe Graphics G7 80EUs. Conexión wifi y bluetooth. Cuenta con 4 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido HD Audio, Stereo. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_805068-MLA53567016823_022023-O.webp",
-		"stock": 52,
+		"stock": 8,
 		"category": "Lenovo",
 		"id": "13",
 		"prize": 50000
@@ -120,7 +120,7 @@
 		"name": "Lenovo Legion 5 Ryzen 5",
 		"description": "Número de parte: t5whj. Procesador: intel core i5-11320h. Sistema operativo: windows 11 pro. Tarjeta de video: gráficos intel iris xe integrados. Pantalla: 14. Memoria: 8 gb ddr4 (3200 mhz). Color: gris titanio. Teclado: sin retroiluminación. Ranura de memoria: 2x so-dimm. Dimensiones: 321 x 213 x 18 mm.. Peso: a partir de 1.44 kg. Cámara: cámara hd rgb. Audio y parlantes: audio de alta definición. Batería: batería 4 celdas integradas.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_854341-MLA53282796647_012023-O.webp",
-		"stock": 83,
+		"stock": 3,
 		"category": "Lenovo",
 		"id": "14",
 		"prize": 640000
@@ -129,7 +129,7 @@
 		"name": "MacBook Pro 16-inch",
 		"description": "Procesador Apple. Memoria RAM de 16GB. Pantalla Liquid Retina XDR de 16.2.Resolución de 3456x2234 px con retina display. Placa de video Apple M2 Pro 19-Core GPU. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Modo de sonido Stereo, Dolby Atmos. La duración de la batería depende del uso que se le dé al producto",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_902974-MLA53547671864_012023-O.webp",
-		"stock": 80,
+		"stock": 8,
 		"category": "Apple",
 		"id": "15",
 		"prize": 1580000

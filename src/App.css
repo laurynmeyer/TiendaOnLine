@@ -1,16 +1,30 @@
 .App {
   text-align: center;
+  min-height: 100%;
+  position: relative;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+/**home **/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #d0d2d3;
 }
 
 .App-header {
@@ -24,16 +38,37 @@
   color: white;
 }
 
+.items_nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 0 1rem;
+}
+
+.items_nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.list_container {
+  padding-bottom: 100px;
+}
+
+
 .App-link {
   color: #61dafb;
 }
 
-.card-container {
-  width: 100%;
+.cards {
+  margin: 10px;
+  background-color: #ecf2f3;
 }
 
-.cards {
-  margin: 20px;
+.cards_container {
+  margin-bottom: 100px;
+  position: relative;
+  padding-bottom: 100px;
+
 }
 
 .card_img_top {
@@ -41,42 +76,47 @@
   height: 12rem;
 }
 
-.items {
-  text-decoration: none;
-  margin: 10px;
-}
-
-.productoDetalle {
+/**Detalle del producto **/
+.productDetail {
   margin: 7%;
   border-style: double;
+  background-color: #ffffff;
 
 }
 
-.productoDetalle h1 {
+.productDetail h1 {
   color: rgb(4, 12, 22);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: #e2e2e2;
+  background-color: #ecf2f3;
   border-style: double;
 
 }
 
-.productoDetalle img {
+.productDetail img {
   display: block;
   margin: 0 auto;
+
 }
 
-.descripcion {
+.description {
   border-style: double;
-  background-color: #e2e2e2;
-
+  background-color: #ecf2f3;
 }
 
-.descripcion p {
+.description h5 {
+  font-weight: bold;
+}
+
+.description p {
   padding-right: 2%;
   padding-left: 2%;
   text-align: justify;
+}
+
+.description h4 {
+  font-size: medium;
 }
 
 .button {
@@ -86,20 +126,15 @@
   padding-right: 25px;
 }
 
+/**footer **/
 .footer-bg {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #302a2a;
-  border-top: 1px solid #ddd;
   padding: 25px 0;
+  z-index: 1;
 }
-
-.cards-container {
-  padding-bottom: 100px; /* ajustar el valor según sea necesario */
-}
-
-
 
 svg.bi {
   fill: white;
@@ -108,13 +143,6 @@ svg.bi {
 .text-body-secondary {
   color: white;
 }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 
 
 @keyframes App-logo-spin {

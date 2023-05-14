@@ -1,4 +1,5 @@
 import { Item } from "../Item/Item"
+import React from 'react';
 
 export const ItemList = ({ list }) => (
 	<>
@@ -8,4 +9,6 @@ export const ItemList = ({ list }) => (
 		))}
 	</>
 )
+
+
 

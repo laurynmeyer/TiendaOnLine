@@ -24,8 +24,8 @@ export const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Compra OnLine</Navbar.Brand>
-                <Nav className="me-auto items">
+                <Navbar.Brand href="#home">Global Technology</Navbar.Brand>
+                <Nav className="me-auto items_nav">
                     <NavLink to="/"></NavLink>
                     {itemsMenu?.map(item => (
                         <NavLink key={item} to={`/category/${item}`}>
