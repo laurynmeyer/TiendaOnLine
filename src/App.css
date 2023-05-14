@@ -28,10 +28,100 @@
   color: #61dafb;
 }
 
+.card-container {
+  width: 100%;
+}
+
+.cards {
+  margin: 20px;
+}
+
+.card_img_top {
+  object-fit: cover;
+  height: 12rem;
+}
+
+.items {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.productoDetalle {
+  margin: 7%;
+  border-style: double;
+
+}
+
+.productoDetalle h1 {
+  color: rgb(4, 12, 22);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #e2e2e2;
+  border-style: double;
+
+}
+
+.productoDetalle img {
+  display: block;
+  margin: 0 auto;
+}
+
+.descripcion {
+  border-style: double;
+  background-color: #e2e2e2;
+
+}
+
+.descripcion p {
+  padding-right: 2%;
+  padding-left: 2%;
+  text-align: justify;
+}
+
+.button {
+  font-size: 20px;
+  margin: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.footer-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #302a2a;
+  border-top: 1px solid #ddd;
+  padding: 25px 0;
+}
+
+.cards-container {
+  padding-bottom: 100px; /* ajustar el valor según sea necesario */
+}
+
+
+
+svg.bi {
+  fill: white;
+}
+
+.text-body-secondary {
+  color: white;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

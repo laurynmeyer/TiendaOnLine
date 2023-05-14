@@ -1,13 +1,21 @@
-import React from "react"
-import cart from './assets/carritoDeCompras.png'
+import Badge from "react-bootstrap/Badge"
 
-const CartWidget = ({ contador }) => {
-    return (
-        <div>
-            <img src={cart} alt="carrito de compras" />
-            <span>{contador}</span>
-        </div>
-    )
+import cart from "./assets/carrito.png"
+
+const styles = {
+    img: {
+		height: 30,
+	},
+	span: {
+		paddingLeft: 10,
+	},
 }
 
-export default CartWidget
+export const CartWidget = () => {
+	return (
+		<Badge bg="info">
+			<img src={cart} alt="Carrito" style={styles.img} />
+			<span style={styles.span}>0</span>
+		</Badge>
+	)
+}
