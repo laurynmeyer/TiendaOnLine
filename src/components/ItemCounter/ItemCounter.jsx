@@ -8,20 +8,21 @@ export const ItemCounter = ({ stock, onAdd }) => {
         if (counter > 0) onAdd(stock - counter)
     }, [counter, onAdd, stock])
 
-    const handlerIncreaseCount = () => {
-        if (stock > counter) setCounter(counter + 1)
-    }
-
     const handlerDecreaseCount = () => {
         if (counter > 0) setCounter(counter - 1)
     }
 
+    const handlerIncreaseCount = () => {
+        if (stock > counter) setCounter(counter + 1)
+    }
+
+
     return (
         <div>
             <Button variant="primary" size="sm" className="button">
-            <span onClick={handlerIncreaseCount}>+</span>
+            <span onClick={handlerDecreaseCount}>-</span>   
             {counter}
-            <span onClick={handlerDecreaseCount}>-</span>
+            <span onClick={handlerIncreaseCount}>+</span>
             </Button>
         </div>
     )

@@ -15,7 +15,6 @@ export const Item = ({ item }) => (
 				<Button variant="primary">Ver detalle</Button>
 			</Link>
 		</Card.Body>
-		<div className="clearfix"></div>
 	</Card>
 )
 
