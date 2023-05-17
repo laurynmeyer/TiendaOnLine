@@ -31,8 +31,8 @@ export const ItemListContainer = ({ greeting }) => {
 
     return (
         <Container className="list_container">
+            <h1 className= "title">{greeting}</h1>
             <div className="cards_container">
-                <h1>{greeting}</h1>
                 <ItemList list={list} />
             </div>
         </Container>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink as RouterNavLink} from "react-router-dom"
 import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
@@ -24,13 +24,12 @@ export const NavBar = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Global Technology</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/">Global Technology</Navbar.Brand>
                 <Nav className="me-auto items_nav">
-                    <NavLink to="/"></NavLink>
                     {itemsMenu?.map(item => (
-                        <NavLink key={item} to={`/category/${item}`}>
+                        <RouterNavLink key={item} to={`/category/${item}`}>
                             {item.toUpperCase()}
-                        </NavLink>
+                        </RouterNavLink>
                     ))}
                 </Nav>
                 <CartWidget />

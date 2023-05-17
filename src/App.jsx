@@ -13,8 +13,8 @@ function App() {
 		<BrowserRouter>
 			<NavBar />
 			<Routes>
-				<Route path="/" element={<ItemListContainer greeting="Productos" />} />
-				<Route path="/category/:id" element={<ItemListContainer greeting="Productos" />} />
+				<Route path="/" element={<ItemListContainer greeting="Nuestros Productos" />} />
+				<Route path="/category/:id" element={<ItemListContainer greeting="Nuestros Productos" />} />
 				<Route path="/item/:id" element={<ItemDetailContainer onAdd={onAdd} />} />
 			</Routes>
 			<MyFooter />

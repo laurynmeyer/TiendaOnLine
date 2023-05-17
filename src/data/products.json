@@ -9,7 +9,7 @@
 		"prize": 835000
 	},
 	{
-		"name": "Notebook Dell Latitud 7420",
+		"name": "Dell Latitud 7420",
 		"description": "Procesador Intel. Memoria RAM de 8GB. Pantalla LED de 14. Es antirreflejo. Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Modo de sonido Stereo. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_659636-MLA51616795541_092022-O.webp",
 		"stock": 10,
@@ -18,7 +18,7 @@
 		"prize": 835000
 	},
 	{
-		"name": "Lenovo Thinkpad L14 Gen 2",
+		"name": "Lenovo Thinkpad L14 G2",
 		"description": "Procesador Intel® Core™ i7-1165G7 de 11ᵃ Generación (2.80 GHz hasta 4.70 GHz). 16 GB DDR4-3200MHz (Soldado). 512 GB SSD M.2 2242 PCIe Gen3 TLC.Gráficos Intel® Iris® Xe integrados. Xbox Game Pass Ultimate (3 meses)",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_969158-MLA54913723026_042023-O.webp",
 		"stock": 16,
@@ -45,7 +45,7 @@
 		"prize": 346000
 	},
 	{
-		"name": "Notebook HP ProBook 250 G7",
+		"name": "Notebook HP ProBook 250",
 		"description": "Procesador Intel Core i5. Memoria RAM de 4GB. Pantalla LED de 15.6. Resolución de 1366x768 px. Es antirreflejo. Placa de video Intel UHD Graphics G1 (Ice Lake 32 EU). Conexión wifi y bluetooth. Cuenta con 3 puertos USB y puerto HDMI. Incluye lector de tarjeta de memoria. Posee pad numérico. Modo de sonido Stereo. La duración de la batería depende del uso que se le dé al producto.",
 		"img": "https://http2.mlstatic.com/D_NQ_NP_927455-MLA52223584440_102022-O.webp",
 		"stock": 13,
