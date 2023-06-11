@@ -1,5 +1,5 @@
 
-import {NavLink as RouterNavLink} from "react-router-dom"
+import { NavLink as RouterNavLink } from "react-router-dom"
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
 
@@ -11,7 +11,7 @@ export const Item = ({ item }) => (
 		<Card.Img variant="top" src={item.img} className="card_img_top" />
 		<Card.Body>
 			<Card.Title className="itemName">{item.name}</Card.Title>
-			<Card.Text>Precio: ${item.prize}</Card.Text>
+			<Card.Text>Precio: ${item.price}</Card.Text>
 			<RouterNavLink to={`/item/${item.id}`}>
 				<Button variant="primary">Ver detalle</Button>
 			</RouterNavLink>

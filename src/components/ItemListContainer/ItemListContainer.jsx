@@ -15,7 +15,7 @@ export const ItemListContainer = ({ greeting }) => {
         const productList = new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(products)
-            }, 2000)
+            }, 1000)
         })
         productList.then(result => {
             if (id) {
@@ -31,7 +31,7 @@ export const ItemListContainer = ({ greeting }) => {
 
     return (
         <Container className="list_container">
-            <h1 className= "title">{greeting}</h1>
+            <h1 className="title">{greeting}</h1>
             <div className="cards_container">
                 <ItemList list={list} />
             </div>

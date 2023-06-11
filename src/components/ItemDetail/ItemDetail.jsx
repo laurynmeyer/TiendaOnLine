@@ -9,7 +9,7 @@ export const ItemDetail = ({ product, onAdd }) => {
             <div className="description">
                 <h5>Descripción del producto:</h5>
                 <p>{product.description}</p>
-                <h4>Precio: ${product.prize}</h4>
+                <h4>Precio: ${product.price}</h4>
                 <ItemCounter stock={product.stock} onAdd={onAdd} />
             </div>
         </div>

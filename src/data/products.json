@@ -6,7 +6,7 @@
 		"stock": 14,
 		"category": "Apple",
 		"id": "1",
-		"prize": 835000
+		"price": 835000
 	},
 	{
 		"name": "Dell Latitud 7420",
@@ -15,7 +15,7 @@
 		"stock": 10,
 		"category": "Dell",
 		"id": "2",
-		"prize": 835000
+		"price": 835000
 	},
 	{
 		"name": "Lenovo Thinkpad L14 G2",
@@ -24,7 +24,7 @@
 		"stock": 16,
 		"category": "Lenovo",
 		"id": "3",
-		"prize": 476000
+		"price": 476000
 	},
 	{
 		"name": "MacBook Pro 2020",
@@ -33,7 +33,7 @@
 		"stock": 17,
 		"category": "Apple",
 		"id": "4",
-		"prize": 799000
+		"price": 799000
 	},
 	{
 		"name": "Notebook Dell Vostro 3401",
@@ -42,7 +42,7 @@
 		"stock": 12,
 		"category": "Dell",
 		"id": "5",
-		"prize": 346000
+		"price": 346000
 	},
 	{
 		"name": "Notebook HP ProBook 250",
@@ -51,7 +51,7 @@
 		"stock": 13,
 		"category": "HP",
 		"id": "6",
-		"prize": 300000
+		"price": 300000
 	},
 	{
 		"name": "Lenovo IdeaPad 14ADA7",
@@ -60,7 +60,7 @@
 		"stock": 12,
 		"category": "Lenovo",
 		"id": "7",
-		"prize": 259000
+		"price": 259000
 	},
 	{
 		"name": "Dell Inspiron 3511",
@@ -69,7 +69,7 @@
 		"stock": 5,
 		"category": "Dell",
 		"id": "8",
-		"prize": 373000
+		"price": 373000
 	},
 	{
 		"name": "Dell Vostro 5410",
@@ -78,7 +78,7 @@
 		"stock": 16,
 		"category": "Dell",
 		"id": "9",
-		"prize": 413000
+		"price": 413000
 	},
 	{
 		"name": "Notebook HP 15-ef2514la",
@@ -87,7 +87,7 @@
 		"stock": 17,
 		"category": "HP",
 		"id": "10",
-		"prize": 400000
+		"price": 400000
 	},
 	{
 		"name": "Lenovo V-Series V15-G2",
@@ -96,7 +96,7 @@
 		"stock": 14,
 		"category": "Lenovo",
 		"id": "11",
-		"prize": 546000
+		"price": 546000
 	},
 	{
 		"name": "HP EliteBook 840 G5",
@@ -105,7 +105,7 @@
 		"stock": 5,
 		"category": "HP",
 		"id": "12",
-		"prize": 234000
+		"price": 234000
 	},
 	{
 		"name": "Lenovo Ip 3 15itl6",
@@ -114,7 +114,7 @@
 		"stock": 8,
 		"category": "Lenovo",
 		"id": "13",
-		"prize": 50000
+		"price": 500000
 	},
 	{
 		"name": "Lenovo Legion 5 Ryzen 5",
@@ -123,7 +123,7 @@
 		"stock": 3,
 		"category": "Lenovo",
 		"id": "14",
-		"prize": 640000
+		"price": 640000
 	},
 	{
 		"name": "MacBook Pro 16-inch",
@@ -132,6 +132,6 @@
 		"stock": 8,
 		"category": "Apple",
 		"id": "15",
-		"prize": 1580000
+		"price": 1580000
 	}
 ]

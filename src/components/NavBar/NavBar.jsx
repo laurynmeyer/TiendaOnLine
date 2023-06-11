@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Link, NavLink as RouterNavLink} from "react-router-dom"
+import { Link, NavLink as RouterNavLink } from "react-router-dom"
 import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"

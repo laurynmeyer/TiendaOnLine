@@ -20,10 +20,11 @@ export const ItemCounter = ({ stock, onAdd }) => {
     return (
         <div>
             <Button variant="primary" size="sm" className="button">
-            <span onClick={handlerDecreaseCount}>-</span>   
-            {counter}
-            <span onClick={handlerIncreaseCount}>+</span>
+                <span onClick={handlerDecreaseCount}>-</span>
+                {counter}
+                <span onClick={handlerIncreaseCount}>+</span>         
             </Button>
+            Stock disponible: {stock}
         </div>
     )
 }
