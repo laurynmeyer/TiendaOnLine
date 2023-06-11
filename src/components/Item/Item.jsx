@@ -8,7 +8,7 @@ export const Item = ({ item }) => (
 		style={{ width: "18rem", height: "23rem" }}
 		key={item.id}
 		className="cards">
-		<Card.Img variant="top" src={item.img} className="card_img_top" />
+		<Card.Img variant="top" src={item.imageid} className="card_img_top" />
 		<Card.Body>
 			<Card.Title className="itemName">{item.name}</Card.Title>
 			<Card.Text>Precio: ${item.price}</Card.Text>

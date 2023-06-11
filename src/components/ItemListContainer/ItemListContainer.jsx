@@ -1,33 +1,40 @@
-import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
-import Container from "react-bootstrap/Container"
-
-import products from "../../data/products.json"
-import { ItemList } from "../ItemList/ItemList"
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+import Container from "react-bootstrap/Container";
+import { ItemList } from "../ItemList/ItemList";
 
 export const ItemListContainer = ({ greeting }) => {
-    const [list, setList] = useState([])
-    const { id } = useParams()
-
-    console.log(id)
+    const [list, setList] = useState([]);
+    const { id } = useParams();
 
     useEffect(() => {
-        const productList = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(products)
-            }, 1000)
-        })
-        productList.then(result => {
-            if (id) {
-                const productsFiltered = result.filter(
-                    item => item.category === id
-                )
-                setList(productsFiltered)
-            } else {
-                setList(result)
+        const fetchProducts = async () => {
+            const db = getFirestore();
+            const refCollection = collection(db, "items");
+
+            try {
+                const snapshot = await getDocs(refCollection);
+                const products = snapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    data: doc.data(),
+                }));
+
+                if (id) {
+                    const productsFiltered = products.filter(
+                        (item) => item.data.category === id
+                    );
+                    setList(productsFiltered);
+                } else {
+                    setList(products);
+                }
+            } catch (error) {
+                console.log("Error fetching products:", error);
             }
-        })
-    }, [id])
+        };
+
+        fetchProducts();
+    }, [id]);
 
     return (
         <Container className="list_container">
@@ -37,5 +44,6 @@ export const ItemListContainer = ({ greeting }) => {
             </div>
         </Container>
     );
+};
 
-}
+export default ItemListContainer;
