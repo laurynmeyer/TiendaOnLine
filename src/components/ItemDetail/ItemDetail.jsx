@@ -1,38 +1,27 @@
-import { useState } from "react";
-import { Button } from "react-bootstrap";
-import { ItemCounter } from "../ItemCounter/ItemCounter";
+import { useContext } from "react"
+
+import { ItemCounter } from "../ItemCounter/ItemCounter"
+import { CartContext } from "../../context/cartContext"
 
 export const ItemDetail = ({ product }) => {
-    const [counter, setCounter] = useState(0);
+  const { addItem } = useContext(CartContext)
 
-    const handleAddToCart = () => {
-        if (counter > 0) {
-            // Aquí puedes realizar la lógica para agregar el producto al carrito
-            setCounter(0);
-        }
-    };
+  const onAdd = quantity => addItem(product, quantity)
 
-    return (
-        <div className="productDetail">
-            <h1>{product.name}</h1>
-            <img src={product.imageid} alt={product.name} />
-            <div className="description">
-                <h5>Descripción del producto:</h5>
-                <p>{product.description}</p>
-                <h4>Precio: ${product.price}</h4>
-                <ItemCounter stock={product.stock} onAdd={setCounter} />
-                <Button
-                    variant="primary"
-                    onClick={handleAddToCart}
-                    disabled={counter === 0}
-                >
-                    Agregar al carrito
-                </Button>
-                <p>Stock disponible: {product.stock}</p>
-            </div>
-        </div>
-    );
-};
+  return (
+    <div className="productDetail">
+      <h1>{product.name}</h1>
+      <img
+        src={product.imageid}
+        height={300}
+        alt={product.name}
+      />
+      <p>{product.description}</p>
+      <p className="price">$ {product.price}</p>
+      <ItemCounter className="counter" stock={product.stock} onAdd={onAdd} />
+    </div>
+  )
+}
 
 
 

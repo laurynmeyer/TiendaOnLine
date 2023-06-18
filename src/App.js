@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { CartProvider } from "../src/context/cartContext"
+import { CartProvider } from "./context/cartContext"
 
 import { getFirestore, collection, getDocs} from "firebase/firestore"
 
@@ -7,6 +7,7 @@ import { NavBar } from "./components/NavBar/NavBar"
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer"
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 import { MyFooter } from "./components/Footer/Footer"
+import {Cart}  from "./components/cart/cart"
 
 import "./App.css"
 import { useEffect } from "react"
@@ -41,6 +42,7 @@ function App() {
 					<Route path="/" element={<ItemListContainer greeting="Nuestros Productos" />} />
 					<Route path="/category/:id" element={<ItemListContainer greeting="Nuestros Productos" />} />
 					<Route path="/item/:id" element={<ItemDetailContainer onAdd={onAdd} />} />
+					<Route path='/cart' element={<Cart/>} />
 				</Routes>
 				<MyFooter />
 			</BrowserRouter>

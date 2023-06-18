@@ -3,7 +3,10 @@ import { NavLink as RouterNavLink } from "react-router-dom"
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
 
-export const Item = ({ item }) => (
+export const Item = ({ item }) =>{
+	console.log("Items:", item);
+return (
+
 	<Card
 		style={{ width: "18rem", height: "23rem" }}
 		key={item.id}
@@ -18,5 +21,5 @@ export const Item = ({ item }) => (
 		</Card.Body>
 	</Card>
 )
-
+}
 

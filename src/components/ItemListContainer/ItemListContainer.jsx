@@ -1,49 +1,48 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
-import Container from "react-bootstrap/Container";
-import { ItemList } from "../ItemList/ItemList";
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
+import Container from "react-bootstrap/Container"
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore"
+
+import { ItemList } from "../ItemList/ItemList"
 
 export const ItemListContainer = ({ greeting }) => {
-    const [list, setList] = useState([]);
-    const { id } = useParams();
+  const [list, setList] = useState([])
+  const { id } = useParams()
 
-    useEffect(() => {
-        const fetchProducts = async () => {
-            const db = getFirestore();
-            const refCollection = collection(db, "items");
+  useEffect(() => {
+    const db = getFirestore()
 
-            try {
-                const snapshot = await getDocs(refCollection);
-                const products = snapshot.docs.map((doc) => ({
-                    id: doc.id,
-                    data: doc.data(),
-                }));
+    const refCollection = id
+      ? query(
+        collection(db, "items"),
+        where("categoryId", "==", id)
+      )
+      : collection(db, "items")
 
-                if (id) {
-                    const productsFiltered = products.filter(
-                        (item) => item.data.category === id
-                    );
-                    setList(productsFiltered);
-                } else {
-                    setList(products);
-                }
-            } catch (error) {
-                console.log("Error fetching products:", error);
-            }
-        };
+    getDocs(refCollection).then(snapshot => {
+      if (snapshot.size === 0) setList([])
+      else {
+        setList(
+          snapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data(),
+          }))
+        )
+      }
+    })
+  }, [id])
 
-        fetchProducts();
-    }, [id]);
-
-    return (
-        <Container className="list_container">
-            <h1 className="title">{greeting}</h1>
-            <div className="cards_container">
-                <ItemList list={list} />
-            </div>
-        </Container>
-    );
+  return (
+    <Container className="list_container">
+      <h1 className="title">{greeting}</h1>
+      <div className="cards_container">
+        {list && list.length > 0 ? (
+          <ItemList list={list} />
+        ) : (
+          <p>No hay productos disponibles.</p>
+        )}
+      </div>
+    </Container>
+  );
 };
 
-export default ItemListContainer;

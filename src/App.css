@@ -1,6 +1,15 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
 .App {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -88,9 +97,11 @@ body {
 
 /**Detalle del producto **/
 .productDetail {
-  margin: 7%;
   border-style: double;
-  background-color: #ffffff;
+  background-color: #e6e9eb;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 15%;
 
 }
 
@@ -99,7 +110,6 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: #ecf2f3;
   border-style: double;
 
 }
@@ -107,35 +117,25 @@ body {
 .productDetail img {
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
 
 }
 
-.description {
-  border-style: double;
-  background-color: #ecf2f3;
-}
-
-.description h5 {
-  font-weight: bold;
-}
-
-.description p {
-  padding-right: 2%;
-  padding-left: 2%;
+.productDetail p {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
   text-align: justify;
 }
 
-.description h4 {
-  font-size: medium;
-}
-
-.button {
+.productDetail .price{
+  padding-top: 10px;font-weight: bold; 
   font-size: 20px;
-  margin: 7px;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
+.form_compra{
+  margin-bottom: 20%;
+}
 /**footer **/
 .space_footer {
   margin-top: auto;
