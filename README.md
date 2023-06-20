@@ -8,14 +8,14 @@ El proyecto está creado con React y se utilizó reactBootstrap para el Nav, Foo
 
 ## Características
 
-Selección de productos por categoria (marca)
-Visualización del catálogo completo
-Visualización del detalle de cada producto
-Selección de productos y envío al carrito de compras
-Eliminación de productos en el resumen de compra
-Total en monto de la compra realizada
-Proceso de CheckOut (formulario de datos a completar por el cliente)
-Generación de orden de compra
+* Selección de productos por categoria (marca)
+* Visualización del catálogo completo
+* Visualización del detalle de cada producto
+* Selección de productos y envío al carrito de compras
+* Eliminación de productos en el resumen de compra
+* Total en monto de la compra realizada
+* Proceso de CheckOut (formulario de datos a completar por el cliente)
+* Generación de orden de compra
 
 ## Créditos
 
