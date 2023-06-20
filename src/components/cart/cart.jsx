@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import Table from "react-bootstrap/Table"
 import { CartContext } from "../../context/cartContext"
+import Swal from 'sweetalert2';
 
 export const Cart = () => {
   const [formValues, setFormValues] = useState({
@@ -29,7 +30,13 @@ export const Cart = () => {
     addDoc(orderCollection, order).then(response => {
       if (response.id) {
         clear()
-        alert("Tu orden: " + response.id + " ha sido completada!")
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Tu compra ha sido realizada con éxito',
+          showConfirmButton: false,
+          timer: 1500
+      })
       }
     })
   }
@@ -50,16 +57,15 @@ export const Cart = () => {
 
   return (
     <Container className="mt-4 form_compra">
-      <h2>Detalle de productos</h2>
+      <h4 className="title_compra">Detalle de productos</h4>
       {!productosAgregados.length ? (
-        <mark>No hay productos</mark>
+        <mark>No hay productos en el carrito</mark>
       ) : (
         <>
           <Table striped bordered hover variant="dark">
             <thead>
               <tr>
                 <th>Nombre</th>
-                <th></th>
                 <th>Precio</th>
                 <th>Cantidad</th>
                 <th></th>
@@ -69,22 +75,16 @@ export const Cart = () => {
               {productosAgregados.map(producto => (
                 <tr key={producto.id}>
                   <td>{producto.name}</td>
-                  <td>
-                    <img
-                      height={60}
-                      src={producto.imageid}
-                      alt={producto.name}
-                    />
-                  </td>
-                  <td>{producto.price}</td>
+
+                  <td>$ {producto.price}</td>
                   <td>{producto.quantity}</td>
                   <td>
                     <Button
+                      className="eliminar"
                       onClick={() =>
                         deleteItem(producto.id)
                       }
-                    >
-                      Eliminar
+                    >Eliminar
                     </Button>
                   </td>
                 </tr>
@@ -95,18 +95,17 @@ export const Cart = () => {
                 <td>Total</td>
                 <td></td>
                 <td></td>
-                <td>{total()}</td>
-                <td></td>
+                <td>$ {total()}</td>
               </tr>
             </tfoot>
           </Table>
-          <h3>Ingresar datos de usuario</h3>
-          <Form>
+          <h4 className="title_compra">Ingresar datos de usuario</h4>
+          <Form className="formulario_datos">
             <Form.Group
-              className="mb-3"
+              className="mb-3 datos_formulario"
               controlId="formBasicEmail"
             >
-              <Form.Label>Nombre y apellido</Form.Label>
+              <Form.Label>Nombre y Apellido</Form.Label>
               <Form.Control
                 onChange={handleChange}
                 value={formValues.name}
@@ -115,7 +114,7 @@ export const Cart = () => {
               />
             </Form.Group>
             <Form.Group
-              className="mb-3"
+              className="mb-3 datos_formulario"
               controlId="formBasicEmail"
             >
               <Form.Label>Correo electrónico</Form.Label>
@@ -126,7 +125,7 @@ export const Cart = () => {
                 name="email"
               />
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-3 datos_formulario">
               <Form.Label>Teléfono de contacto</Form.Label>
               <Form.Control
                 onChange={handleChange}
@@ -136,11 +135,12 @@ export const Cart = () => {
               />
             </Form.Group>
             <Button
+              className="datos_formulario"
               variant="primary"
               type="button"
               onClick={sendOrder}
             >
-              Submit
+              Finalizar compra
             </Button>
           </Form>
         </>

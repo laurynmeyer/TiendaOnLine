@@ -12,7 +12,7 @@ export const NavBar = () => {
     useEffect(() => {
         const getProductsFromFirebase = async () => {
             const db = getFirestore();
-            const productsCollection = collection(db, "products");
+            const productsCollection = collection(db, "items");
             const querySnapshot = await getDocs(productsCollection);
             const products = querySnapshot.docs.map((doc) => ({
                 id: doc.id,

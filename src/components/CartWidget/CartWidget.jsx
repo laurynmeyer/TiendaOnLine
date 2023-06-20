@@ -28,10 +28,10 @@ export const CartWidget = () => {
     !!totalQuantity() && (
       <Link to="/cart">
         <Badge bg="info">
-          <img src={cart} alt="Changuito" style={styles.img} />
+          <img src={cart} alt="Carrito de compras" style={styles.img} />
           <span style={styles.span}>{totalQuantity()}</span>
         </Badge>
-        <Button>Finalizar compra</Button>
+        <Button className="iniciar_compra">Iniciar compra</Button>
       </Link>
     )
   )

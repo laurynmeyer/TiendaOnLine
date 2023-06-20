@@ -15,7 +15,7 @@ export const ItemListContainer = ({ greeting }) => {
     const refCollection = id
       ? query(
         collection(db, "items"),
-        where("categoryId", "==", id)
+        where("category", "==", id)
       )
       : collection(db, "items")
 
@@ -39,7 +39,7 @@ export const ItemListContainer = ({ greeting }) => {
         {list && list.length > 0 ? (
           <ItemList list={list} />
         ) : (
-          <p>No hay productos disponibles.</p>
+          <p>No hay productos disponibles</p>
         )}
       </div>
     </Container>
