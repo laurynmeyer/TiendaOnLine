@@ -1,3 +1,27 @@
+# Tienda On Line
+
+Para hacer mi proyecto elegí una tienda de venta de productos asociados con la tecnología, allí los clientes pueden seleccionar el producto de su interés y visualizar sus carácterísticas antes de realizar la compra. La idea es que la tienda sea intuitiva para los usuarios que navegan en ella.
+
+## Integraciones
+
+El proyecto está creado con React y se utilizó reactBootstrap para el Nav, Footer, Card y Carousel además de css para algunas customizaciones. Además se usó jugar sintax para las notificaciones emergentes que recibe el usuario (Sweet alert - Toastify). FireBase/Firestone como base de datos de los productos y las órdenes realizadas
+
+## Características
+
+Selección de productos por categoria (marca)
+Visualización del catálogo completo
+Visualización del detalle de cada producto
+Selección de productos y envío al carrito de compras
+Eliminación de productos en el resumen de compra
+Total en monto de la compra realizada
+Proceso de CheckOut (formulario de datos a completar por el cliente)
+Generación de orden de compra
+
+## Créditos
+
+María Laura Miranda
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
