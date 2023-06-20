@@ -33,7 +33,7 @@ export const Cart = () => {
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: 'Tu compra ha sido realizada con éxito',
+          title: `Tu orden: ${response.id} ha sido completada!`,
           showConfirmButton: false,
           timer: 1500
       })
@@ -65,9 +65,9 @@ export const Cart = () => {
           <Table striped bordered hover variant="dark">
             <thead>
               <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
+                <th>NOMBRE</th>
+                <th>PRECIO</th>
+                <th>CANTIDAD</th>
                 <th></th>
               </tr>
             </thead>
@@ -80,7 +80,7 @@ export const Cart = () => {
                   <td>{producto.quantity}</td>
                   <td>
                     <Button
-                      className="eliminar"
+                      className="eliminar button_class"
                       onClick={() =>
                         deleteItem(producto.id)
                       }
@@ -92,20 +92,32 @@ export const Cart = () => {
             </tbody>
             <tfoot>
               <tr>
-                <td>Total</td>
+                <td>TOTAL</td>
                 <td></td>
                 <td></td>
                 <td>$ {total()}</td>
               </tr>
             </tfoot>
           </Table>
-          <h4 className="title_compra">Ingresar datos de usuario</h4>
+          <h4 className="title_compra">CheckOut</h4>
           <Form className="formulario_datos">
             <Form.Group
               className="mb-3 datos_formulario"
               controlId="formBasicEmail"
             >
-              <Form.Label>Nombre y Apellido</Form.Label>
+              <Form.Label>Nombre</Form.Label>
+              <Form.Control
+                onChange={handleChange}
+                value={formValues.name}
+                type="text"
+                name="name"
+              />
+            </Form.Group>
+            <Form.Group
+              className="mb-3 datos_formulario"
+              controlId="formBasicEmail"
+            >
+              <Form.Label>Apellido</Form.Label>
               <Form.Control
                 onChange={handleChange}
                 value={formValues.name}
@@ -125,6 +137,18 @@ export const Cart = () => {
                 name="email"
               />
             </Form.Group>
+            <Form.Group
+              className="mb-3 datos_formulario"
+              controlId="formBasicEmail"
+            >
+              <Form.Label>Re-ingresá tu Correo electrónico</Form.Label>
+              <Form.Control
+                onChange={handleChange}
+                value={formValues.email}
+                type="email"
+                name="email"
+              />
+            </Form.Group>
             <Form.Group className="mb-3 datos_formulario">
               <Form.Label>Teléfono de contacto</Form.Label>
               <Form.Control
@@ -135,7 +159,7 @@ export const Cart = () => {
               />
             </Form.Group>
             <Button
-              className="datos_formulario"
+              className="datos_formulario button_class"
               variant="primary"
               type="button"
               onClick={sendOrder}

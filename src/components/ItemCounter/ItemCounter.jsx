@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import InputGroup from "react-bootstrap/InputGroup"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
@@ -29,36 +30,51 @@ export const ItemCounter = ({ stock, onAdd, initial }) => {
 
   return (
     <section className="col-12 col-sm-6 col-md-3 mb-4">
-      <InputGroup>
-        <Button
-          variant="primary"
-          className="counter"
-          onClick={handleDecreaseCount}
-        >
-          -
-        </Button>
-        <Form.Control
-          value={counter}
-          className="text-center"
-        />
-        <Button
-          variant="primary"
-          onClick={handleIncreaseCount}
-        >
-          +
-        </Button>
-      </InputGroup>
-      {!!counter && (
-        <Button
-          variant="outline-primary"
-          className="mt-4 counter"
-          onClick={handleAddToCart}
-        >Agregar al carrito
-        </Button>
+      {stock > 0 ? (
+        <>
+          <InputGroup>
+            <Button
+              variant="primary"
+              className="counter button_class"
+              onClick={handleDecreaseCount}
+            >
+              -
+            </Button>
+            <Form.Control
+              value={counter}
+              className="text-center counter"
+            />
+            <Button
+              variant="primary"
+              className="counter button_class"
+              onClick={handleIncreaseCount}
+            >
+              +
+            </Button>
+          </InputGroup>
+          {!!counter && (
+            <Button
+              variant="outline-primary"
+              className="mt-4 counter button_class"
+              onClick={handleAddToCart}
+            >
+              Agregar al carrito
+            </Button>
+          )}
+          <div className="mt-4 counter">
+            Stock disponible: {stock - counter}
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="mt-4">No hay stock</div>
+          <Link to="/">
+            <Button variant="outline-primary" className="mt-4">
+              Seguir comprando
+            </Button>
+          </Link>
+        </>
       )}
-      <div className="mt-4 counter">
-        Stock disponible: {stock - counter}
-      </div>
     </section>
   )
 }

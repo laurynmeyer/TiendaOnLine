@@ -16,7 +16,7 @@ return (
 			<Card.Title className="itemName">{item.name}</Card.Title>
 			<Card.Text>Precio: ${item.price}</Card.Text>
 			<RouterNavLink to={`/item/${item.id}`}>
-				<Button variant="primary">Ver detalle</Button>
+				<Button variant="primary button_class">Ver detalle</Button>
 			</RouterNavLink>
 		</Card.Body>
 	</Card>

@@ -49,12 +49,27 @@ body {
 
 .iniciar_compra{
   margin-left: 30px;
-  background-color: #36b4d6;
+  background-color: #479ead;
+  color:#d0d2d3;
+  font-weight: bold;
+  border-color:#479ead; 
 }
 
+.iniciar_compra:hover{
+  background-color: #0092ac;
+  border-color:#0092ac;    
+}
 
-.App-link {
-  color: #61dafb;
+.button_class{
+  background-color: #479ead;
+  color:#d0d2d3;
+  font-weight: bold;
+  border-color:#479ead; 
+}
+
+.button_class:hover{
+  background-color: #0092ac;
+  border-color:#0092ac;   
 }
 
 .list_container {
@@ -66,8 +81,9 @@ body {
   display: grid;
   grid-column: 1 / -1;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 35px;
   padding-bottom: 30px;
+  font-size: 35px;
 }
 
 .cards {

@@ -8,8 +8,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 import { MyFooter } from "./components/Footer/Footer"
 import { Cart } from "./components/cart/cart"
-
-
+import { ImagenPrincipal } from "./components/Carousel/Carousel"
 import "./App.css"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -43,7 +42,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<ItemListContainer greeting="Nuestros Productos" />} />
+          <Route path="/" element={<div><ImagenPrincipal /><ItemListContainer greeting="Nuestros Productos" /></div>} />
           <Route path="/category/:id" element={<ItemListContainer greeting="Nuestros Productos" />} />
           <Route path="/item/:id" element={<ItemDetailContainer onAdd={onAdd} />} />
           <Route path='/cart' element={<Cart />} />
